@@ -50,3 +50,14 @@ isLocalPlayer=true のときだけ使うのが一般的か？
 ・大体の場合において isClient は true となる。これが false となる状況は？  
 ・NetworkIdentity の LocalPlayerAuthority はどういう時に使用するか？  
 ・NetworkIdentity を付けたGameObjectは起動時に不可視となるが、この処理はどこで行われているか？  
+
+
+##参考
+[マルチプレーヤーとネットワーキング]
+(http://docs.unity3d.com/ja/current/Manual/UNet.html)
+
+[MEMO of UNET]
+(http://sugi.cc/post/124256773541/memo-of-unet)
+
+[UNETでHPを画面に表示し、Playerへダメージを与える]
+(http://hiyotama.hatenablog.com/entry/2015/07/15/090000)
