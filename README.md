@@ -21,7 +21,7 @@ Client接続時に生成される。
 
 **MainUI**  
 メッセージ用のUI。  
-ChatPlayerと参照関係にある。// TODO
+ChatPlayerと参照関係にある。// TODO: ざっくりした作りなので整理する。
 
 ##Attribute について
 [SyncVar]  
