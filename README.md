@@ -61,3 +61,24 @@ isLocalPlayer=true のときだけ使うのが一般的か？
 
 [UNETでHPを画面に表示し、Playerへダメージを与える]
 (http://hiyotama.hatenablog.com/entry/2015/07/15/090000)
+
+##Memo
+
+クライアントからサーベーへ
+
+public int currenId = 0;
+[Command]
+public void CmdSetCurrentMode(int id)
+{
+	currenId = id;
+}
+サーバーのPlayerの値のみ変更される。（ClientPlayerはそのまま）
+
+[SyncVar]
+public int currenId = 0;
+Command]
+public void CmdSetCurrentMode(int id)
+{
+	currenId = id;
+}
+SyncVarをつけると、サーバーPlayerの値もクライアントPlayer値も同期される。
