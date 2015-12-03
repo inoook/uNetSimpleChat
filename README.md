@@ -65,15 +65,17 @@ isLocalPlayer=true のときだけ使うのが一般的か？
 ##Memo
 
 クライアントからサーバーへ
-
+~~~cs
 public int currenId = 0;
 [Command]
 public void CmdSetCurrentMode(int id)
 {
 	currenId = id;
 }
+~~~
 サーバーのPlayerの値のみ変更される。（ClientPlayerはそのまま）
 
+~~~cs
 [SyncVar]
 public int currenId = 0;
 Command]
@@ -82,3 +84,4 @@ public void CmdSetCurrentMode(int id)
 	currenId = id;
 }
 SyncVarをつけると、サーバーPlayerの値もクライアントPlayer値も同期される。
+~~~
