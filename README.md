@@ -79,7 +79,7 @@ public void CmdSetCurrentMode(int id)
 ~~~cs
 [SyncVar]
 public int currenId = 0;
-Command]
+[Command]
 public void CmdSetCurrentMode(int id)
 {
 	currenId = id;
