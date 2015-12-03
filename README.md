@@ -64,7 +64,7 @@ isLocalPlayer=true のときだけ使うのが一般的か？
 
 ##Memo
 
-クライアントからサーベーへ
+クライアントからサーバーへ
 
 public int currenId = 0;
 [Command]
