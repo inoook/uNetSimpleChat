@@ -75,6 +75,7 @@ public void CmdSetCurrentMode(int id)
 ~~~
 サーバーのPlayerの値のみ変更される。（ClientPlayerはそのまま）
 
+
 ~~~cs
 [SyncVar]
 public int currenId = 0;
@@ -83,5 +84,5 @@ public void CmdSetCurrentMode(int id)
 {
 	currenId = id;
 }
-SyncVarをつけると、サーバーPlayerの値もクライアントPlayer値も同期される。
 ~~~
+SyncVarをつけると、サーバーPlayerの値もクライアントPlayer値も同期される。
